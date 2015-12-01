@@ -1,0 +1,13 @@
+ <div ng-controller='showController'>
+
+ <h3>Done</h3>
+ <div ng-repeat="dash in done ">
+     <div>   
+    {{ dash.name_id.name }} says {{ dash.title }}: {{ dash.desc }} -{{dash.created_at| date :'medium'}} </div>
+    </div>   
+<h3>Pending</h3>
+     <div ng-repeat="dash in pend ">
+     <div>   
+    {{ dash.name_id.name }} says {{ dash.title }}: {{ dash.desc }} -{{dash.created_at | date :'medium'}} </div>
+    </div>   
+</div>
